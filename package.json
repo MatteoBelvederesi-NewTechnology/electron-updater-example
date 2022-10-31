@@ -17,6 +17,11 @@
     "electron-updater": "^4.3.9"
   },
   "build": {
+    "publish": [{
+      "provider": "github",
+      "owner": "MatteoBelvederesi-NewTechnology",
+      "repo": "electron-updater-example"
+    }],
     "appId": "com.github.MatteoBelvederesi-NewTechnology.electronupdaterexample",
     "afterSign": "./build/notarize.js",
     "mac": {
